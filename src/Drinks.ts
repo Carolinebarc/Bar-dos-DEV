@@ -1,11 +1,24 @@
-abstract class Drink {
-    public name: string;
-    public hasAlcohol: boolean;
-    public size: string;
 
-    constructor (name: string, hasAlcohol: boolean, size: string) {
-        this.name = name
+
+abstract class Drink {
+
+    public hasAlcohol: boolean;
+    public codDrink: number 
+    public size: string;
+    public qntDrinks: number 
+    public price: number 
+
+
+   
+    constructor ( hasAlcohol: boolean, size: string, price: number, codDrink: number) {
+
         this.hasAlcohol = hasAlcohol
+        this.codDrink = codDrink
         this.size = size
+        this.price = price 
     }
-}
+
+   
+    }
+      
+      export { Drink }; 
